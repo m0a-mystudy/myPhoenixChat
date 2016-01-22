@@ -19,7 +19,7 @@ defmodule MyPhoenixChat.Mixfile do
   def application do
     [mod: {MyPhoenixChat, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :mariaex]]
+                    :phoenix_ecto, :mariaex, :extwitter]]
   end
 
   # Specifies which paths to compile per environment.
@@ -36,7 +36,10 @@ defmodule MyPhoenixChat.Mixfile do
      {:phoenix_html, "~> 2.3"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:oauth, github: "tim/erlang-oauth"},
+     {:extwitter, "~> 0.6"}
+     ]
   end
 
   # Aliases are shortcut or tasks specific to the current project.

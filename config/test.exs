@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :myPhoenixChat, MyPhoenixChat.Repo,
   adapter: Ecto.Adapters.MySQL,
-  username: "root",
-  password: "",
+  username: "devuser",
+  password: "devuserdevuser",
   database: "myphoenixchat_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
